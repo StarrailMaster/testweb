@@ -61,7 +61,7 @@ const Home = () => {
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/search', {
+      const response = await axios.post('http://13.55.190.75:8080/api/search', {
         category: searchTerm
       });
       setSearchResults(response.data);
